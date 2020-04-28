@@ -41,10 +41,10 @@ freeze-upgrade:
 
 dist:
 	rm -rf dist
-	python3 setup.py sdist bdist_wheel
+	python3 setup.py sdist
 	python3 -m twine upload dist/*
 
 test-pip:
 	python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps whispers
 
-.PHONY: install install-dev isort-lint black-lint flake8-lint format lint unit coverage test
+.PHONY: install install-dev isort-lint black-lint flake8-lint format lint unit coverage test dist
