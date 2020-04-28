@@ -23,11 +23,11 @@ class WhisperPlugins:
         self.plugin = None
         if not self.filepath.exists():
             self.plugin = None
-        if not self.filepath.is_file():
+        elif not self.filepath.is_file():
             self.plugin = None
-        if self.filepath.stat().st_size < 7:
+        elif self.filepath.stat().st_size < 7:
             self.plugin = None
-        if self.filetype in ["yaml", "yml"]:
+        elif self.filetype in ["yaml", "yml"]:
             self.plugin = Yml()
         elif self.filetype == "json":
             self.plugin = Json()
