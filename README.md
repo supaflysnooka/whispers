@@ -1,5 +1,10 @@
 # Whispers <img src="whispers.png" width="40px" alt="Whispers" style=""> 
 
+[![](https://img.shields.io/pypi/v/whispers.svg)](https://pypi.python.org/pypi/whispers/)
+[![](https://img.shields.io/travis/Skyscanner/whispers)](https://travis-ci.org/Skyscanner/whispers)
+[![](https://img.shields.io/github/issues/Skyscanner/whispers)](https://github.com/Skyscanner/whispers/issues)
+[![](https://img.shields.io/github/issues-pr/Skyscanner/whispers)](https://github.com/Skyscanner/whispers/pulls)
+
 > "My little birds are everywhere, even in the North, they whisper to me the strangest stories." - _Lord Varys_
 
 Whispers is a static code analysis tool designed for parsing various common data formats in search of hardcoded credentials and dangerous functions. Whispers can run in the CLI or you can integrate it in your CI/CD pipeline.
